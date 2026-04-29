@@ -4,17 +4,21 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-//ici on importe le composant Banner que nous allons créer dans le dossier components
+//Sur la ligne 8 on importe le composant Banner que nous avons créer dans le dossier components.
 import Banner from './components/Banner'
-
+//Sur la ligne 9 on importe le composant Cart que nous avons créer dans le dossier components.
+import Cart from './components/Cart'
+//Sur la ligne 10 le composant App est le composant principal de notre application, c'est lui qui va afficher tous les autres composants.
 function App() {
  
-
+//Sur la ligne 13 ,return est la partie qui affiche le contenu de notre application, ici on affiche le composant Banner .
   return (
     <>
-      <Banner />    
+  
+      <Banner /> 
+      <Cart />   
     </>
   )
 }
-
+//exportation du composant App 
 export default App
