@@ -1,0 +1,23 @@
+.plantList {
+    list-style: none;
+    padding: 32px;
+    background-color: #31b573ad;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.plantItem {
+    margin: 5px;
+    background-color: #31b572;
+    color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #abe7c9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
