@@ -4,6 +4,9 @@
 //
 import styles from '../styles/ShoppingList.module.css'
 
+import CareScale from './CareScale';
+
+
 //importation de React pour pouvoir utiliser les fonctionnalités de React
 const plantList = [
     {
@@ -11,7 +14,9 @@ const plantList = [
         category: 'classique',
         id: '1',
         isBestSale: true,
-        isSpecialOffer: false
+        isSpecialOffer: false ,
+        water : 3,
+        light : 6
     },
 
     {
@@ -19,7 +24,9 @@ const plantList = [
         category: 'classique',
         id: '2',
         isBestSale: false,
-        isSpecialOffer: false
+        isSpecialOffer: false,
+        water : 6,
+        light : 1
     },
 
     {
@@ -27,27 +34,36 @@ const plantList = [
         category: 'classique',
         id: '3',
         isBestSale: false,
-        isSpecialOffer: true
+        isSpecialOffer: true,
+        water : 2,
+        light : 4
     }
 ];
 const ShoppingList = () => {
     return (
-        
-        <div className={styles.shoppingList}>
+       
+    
         <ul className={styles.plantList}>
         {
         plantList.map((plant) => (
-            <li key={plant.id}className={styles.plantItem}>
-                { plant.isBestSale ? <span>👍</span> : <span>👎</span> }
-                { plant.isSpecialOffer ? <span>solde</span> : <span>non solde</span> }
-                {plant.name}</li>
+            /**
+             * 
+             *  */          <li key={plant.id}className={styles.plantItem}>
+                { plant.isBestSale ? <span>👍</span> : <span>👎</span> } 
+                {plant.name}
+                { plant.isSpecialOffer ? <span className={styles.lmjSales}>
+                solde</span> : <span>non solde</span> }
+
+                <CareScale careType="light" scaleValue={plant.light}></CareScale>
+                <CareScale careType="water" scaleValue={plant.water}></CareScale>
+               </li>
         
         )
     
         )
         }
         </ul>
-    </div>
+    
     )
 
 }

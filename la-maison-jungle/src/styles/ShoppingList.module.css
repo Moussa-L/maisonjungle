@@ -21,3 +21,14 @@
     flex-direction: column;
     position: relative;
 }
+
+.lmjSales {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 0 0 0 10px;
+}

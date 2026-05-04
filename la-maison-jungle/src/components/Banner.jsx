@@ -7,17 +7,22 @@ import styles from '../styles/Banner.module.css'
 
 //je vais importer mon logo
 import logo from '../assets/fleur-logo.jpg'
-   
+
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ * le composant Banner est un composant fonctionnel qui prend en paramètre des enfants (children) et qui retourne une div avec une classe banner qui contient les enfants passés en paramètre.
+ */  
 //importation de React pour pouvoir utiliser les fonctionnalités de React
-const Banner = () => {
+const Banner = ({children}) => {
 const title = "Bienvenue sur à la maison jungle"
 
     //return est la partie qui affiche le contenu de notre composant, ici on affiche un titre h1 avec le texte "Bienvenue sur à la maison jungle"
     return (
         <div className={styles.banner}>
-            <img src={logo} alt="Logo" 
-            className={styles.logo} />
-            <h1 className={styles.title}>{title}</h1>
+           {children}
+            
         </div>
         
     )
