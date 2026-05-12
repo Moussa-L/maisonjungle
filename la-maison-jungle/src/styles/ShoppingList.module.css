@@ -1,3 +1,4 @@
+/* Liste qui contient toutes les plantes. */
 .plantList {
     list-style: none;
     padding: 32px;
@@ -7,6 +8,7 @@
     max-width: 800px;
 }
 
+/* Style prévu pour une carte de plante. */
 .plantItem {
     margin: 5px;
     background-color: #31b572;
@@ -22,6 +24,7 @@
     position: relative;
 }
 
+/* Badge prévu pour signaler une vente ou une promotion. */
 .lmjSales {
     position: absolute;
     top: 0;

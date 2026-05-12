@@ -1,3 +1,4 @@
+/* Variables globales et réglages de base de l'application. */
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -30,6 +31,7 @@
   }
 }
 
+/* Adaptation automatique des couleurs en mode sombre. */
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -50,10 +52,12 @@
   }
 }
 
+/* Réinitialisation de la marge par défaut du navigateur. */
 body {
   margin: 0;
 }
 
+/* Conteneur racine dans lequel React affiche l'application. */
 #root {
   width: 1126px;
   max-width: 100%;
@@ -66,6 +70,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Styles communs des titres. */
 h1,
 h2 {
   font-family: var(--heading);
@@ -73,6 +78,7 @@ h2 {
   color: var(--text-h);
 }
 
+/* Style du titre principal. */
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
@@ -82,6 +88,7 @@ h1 {
     margin: 20px 0;
   }
 }
+/* Style des titres secondaires. */
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -91,10 +98,12 @@ h2 {
     font-size: 20px;
   }
 }
+/* Réinitialisation des marges des paragraphes. */
 p {
   margin: 0;
 }
 
+/* Style commun du texte technique et du compteur. */
 code,
 .counter {
   font-family: var(--mono);
@@ -103,6 +112,7 @@ code,
   color: var(--text-h);
 }
 
+/* Style spécifique des blocs de code inline. */
 code {
   font-size: 15px;
   line-height: 135%;

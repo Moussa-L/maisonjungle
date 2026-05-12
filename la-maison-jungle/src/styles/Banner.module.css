@@ -2,6 +2,7 @@
 * Styles pour le composant Banner
 */
 
+/* Conteneur principal de la bannière. */
 .banner {
     display: flex;
     align-items: center;
@@ -12,12 +13,14 @@
     color: #0c4e0c;
     
 }
+/* Style du titre affiché dans la bannière. */
 .title {
     color : #153d15;
     font-size: 2rem;
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
+/* Style du logo affiché dans la bannière. */
 .logo {
     width: 100px;
     height: auto;

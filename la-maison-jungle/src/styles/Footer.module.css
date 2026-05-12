@@ -1,0 +1,14 @@
+.lmjFooterElem {
+  
+   margin-bottom: 10px;
+}
+
+.lmjFooter {
+    color: #fff;
+    padding: 32px;
+    background-color: #ed2626;
+    border-top: 3px solid #6ddf6d;
+    display: flex;
+    justify-content: space-between;
+}
+

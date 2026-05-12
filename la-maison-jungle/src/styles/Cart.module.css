@@ -1,9 +1,11 @@
+/* Conteneur visuel du panier. */
 .cart {
     padding: 32px;
     background-color: #31b572;
     color: white;
    
 }
+/* Liste des produits dans le panier. */
 .ul{
      list-style: none;
 }

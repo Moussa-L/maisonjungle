@@ -1,3 +1,4 @@
+/* Style d'un compteur ou bouton compteur. */
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -17,6 +18,7 @@
   }
 }
 
+/* Zone prévue pour un visuel principal. */
 .hero {
   position: relative;
 
@@ -56,6 +58,7 @@
   }
 }
 
+/* Conteneur central de la page. */
 #center {
   display: flex;
   flex-direction: column;
@@ -70,6 +73,7 @@
   }
 }
 
+/* Section prévue pour les étapes suivantes. */
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
@@ -95,6 +99,7 @@
   }
 }
 
+/* Colonne dédiée à la documentation. */
 #docs {
   border-right: 1px solid var(--border);
 
@@ -104,6 +109,7 @@
   }
 }
 
+/* Liste des liens de la section suivante. */
 #next-steps ul {
   list-style: none;
   padding: 0;
@@ -153,6 +159,7 @@
   }
 }
 
+/* Espace vertical entre deux zones. */
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
@@ -161,6 +168,7 @@
   }
 }
 
+/* Repères décoratifs autour d'une zone. */
 .ticks {
   position: relative;
   width: 100%;
